@@ -1,0 +1,1427 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Mookh V2.0 API Documentation">
+      
+      
+        <link rel="canonical" href="https://www.mookh.com/api-guide/public/2-ticketing/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.3.0">
+    
+    
+      
+        <title>3. Ticketing - Mookh 2.0 APIs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.572ca0f0.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#f9a825">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.962652e9.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="yellow" data-md-color-accent="dark-grey">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#1-events" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://www.mookh.com/" title="Mookh 2.0 APIs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Mookh 2.0 APIs
+              </span>
+              <span class="md-header-nav__topic">
+                3. Ticketing
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/MOOKHAFRICA/api-backend-mookh-v2.5/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://www.mookh.com/" title="Mookh 2.0 APIs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Mookh 2.0 APIs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/MOOKHAFRICA/api-backend-mookh-v2.5/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Accounts and Roles
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Accounts and Roles
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../accounts/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../accounts/roles/1-admin/" title="Admin" class="md-nav__link">
+      Admin
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../accounts/roles/2-merchant/" title="Merchants" class="md-nav__link">
+      Merchants
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../accounts/roles/3-client/" title="Clients" class="md-nav__link">
+      Clients
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../accounts/roles/5-agents/" title="Agents" class="md-nav__link">
+      Agents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../accounts/roles/4-others/" title="Other Roles" class="md-nav__link">
+      Other Roles
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Store
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Store
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../store/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../store/1-ownership/" title="1 - Ownership" class="md-nav__link">
+      1 - Ownership
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../store/2-agents/" title="2 - Agents" class="md-nav__link">
+      2 - Agents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
+    
+    <label class="md-nav__link" for="nav-3-4">
+      3 - Store & Items
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        3 - Store & Items
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../store/" title="1 - Overview" class="md-nav__link">
+      1 - Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../store/items/1-ticketing/" title="2 - Ticketing" class="md-nav__link">
+      2 - Ticketing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../store/items/2-digital/" title="3 - Digital Content" class="md-nav__link">
+      3 - Digital Content
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../store/items/3-services/" title="4 - Services" class="md-nav__link">
+      4 - Services
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../store/items/4-products/" title="5 - Products" class="md-nav__link">
+      5 - Products
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Developer's Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Developer's Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../1-start/" title="1 - Getting Started" class="md-nav__link">
+      1 - Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2-auth/" title="2 - Authentication" class="md-nav__link">
+      2 - Authentication
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../3-store/" title="3 - Store" class="md-nav__link">
+      3 - Store
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      4 - Items
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        4 - Items
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../items/1-ticketing/" title="1. Ticketing" class="md-nav__link">
+      1. Ticketing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../items/2-digital/" title="2. Digital Content" class="md-nav__link">
+      2. Digital Content
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../items/3-services/" title="3. Services" class="md-nav__link">
+      3. Services
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../items/4-products/" title="4. Products" class="md-nav__link">
+      4. Products
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5" checked>
+    
+    <label class="md-nav__link" for="nav-4-5">
+      5 - Public
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
+        5 - Public
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="1. Overview" class="md-nav__link">
+      1. Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../1-featured/" title="2. Featured" class="md-nav__link">
+      2. Featured
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        3. Ticketing
+      </label>
+    
+    <a href="./" title="3. Ticketing" class="md-nav__link md-nav__link--active">
+      3. Ticketing
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#11-querying-events" title="1.1. Querying Events" class="md-nav__link">
+    1.1. Querying Events
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-retrieving-an-event" title="1.2. Retrieving an Event" class="md-nav__link">
+    1.2. Retrieving an Event
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121-important-notes" title="1.2.1. Important notes" class="md-nav__link">
+    1.2.1. Important notes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-filtering-sorting-events" title="1.3. Filtering / Sorting Events" class="md-nav__link">
+    1.3. Filtering / Sorting Events
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131-important-notes" title="1.3.1. Important notes" class="md-nav__link">
+    1.3.1. Important notes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-searching-events" title="1.4. Searching Events" class="md-nav__link">
+    1.4. Searching Events
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../3-digital/" title="4. Digital Content" class="md-nav__link">
+      4. Digital Content
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../4-services/" title="5. Services" class="md-nav__link">
+      5. Services
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../5-products/" title="6. Products" class="md-nav__link">
+      6. Products
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../6-payments/" title="7. Payments" class="md-nav__link">
+      7. Payments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../7-ordering/" title="8. Ordering" class="md-nav__link">
+      8. Ordering
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../6-messaging/" title="6 - Messaging" class="md-nav__link">
+      6 - Messaging
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../7-payments/" title="7 - Payments" class="md-nav__link">
+      7 - Payments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../8-analytics/" title="8 - Analytics" class="md-nav__link">
+      8 - Analytics
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Community
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Community
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../community/jobs/" title="Jobs" class="md-nav__link">
+      Jobs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#11-querying-events" title="1.1. Querying Events" class="md-nav__link">
+    1.1. Querying Events
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-retrieving-an-event" title="1.2. Retrieving an Event" class="md-nav__link">
+    1.2. Retrieving an Event
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121-important-notes" title="1.2.1. Important notes" class="md-nav__link">
+    1.2.1. Important notes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-filtering-sorting-events" title="1.3. Filtering / Sorting Events" class="md-nav__link">
+    1.3. Filtering / Sorting Events
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131-important-notes" title="1.3.1. Important notes" class="md-nav__link">
+    1.3.1. Important notes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-searching-events" title="1.4. Searching Events" class="md-nav__link">
+    1.4. Searching Events
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/MOOKHAFRICA/api-backend-mookh-v2.5/edit/master/docs/api-guide/public/2-ticketing.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="1-events"><a class="toclink" href="#1-events">1. Events</a></h1>
+<h2 id="11-querying-events"><a class="toclink" href="#11-querying-events">1.1. Querying Events</a></h2>
+<p>Methods [GET]</p>
+<p>URL: <code>API_URL/stores/event/public/slug/</code></p>
+<p>RESPONSE</p>
+<pre><code>{
+    &quot;pagination&quot;: {
+        &quot;count&quot;: 78,
+        &quot;num_pages&quot;: 4,
+        &quot;current_page&quot;: 1,
+        &quot;html_context&quot;: {
+            &quot;previous_url&quot;: null,
+            &quot;next_url&quot;: &quot;https://api-v2.mookh.com/stores/event/public/slug/?page=2&quot;,
+            &quot;page_links&quot;: [
+                {
+                    &quot;url&quot;: &quot;https://api-v2.mookh.com/stores/event/public/slug/&quot;,
+                    &quot;number&quot;: 1,
+                    &quot;is_active&quot;: true,
+                    &quot;is_break&quot;: false
+                },
+                {
+                    &quot;url&quot;: &quot;https://api-v2.mookh.com/stores/event/public/slug/?page=2&quot;,
+                    &quot;number&quot;: 2,
+                    &quot;is_active&quot;: false,
+                    &quot;is_break&quot;: false
+                },
+                {
+                    &quot;url&quot;: &quot;https://api-v2.mookh.com/stores/event/public/slug/?page=3&quot;,
+                    &quot;number&quot;: 3,
+                    &quot;is_active&quot;: false,
+                    &quot;is_break&quot;: false
+                },
+                {
+                    &quot;url&quot;: &quot;https://api-v2.mookh.com/stores/event/public/slug/?page=4&quot;,
+                    &quot;number&quot;: 4,
+                    &quot;is_active&quot;: false,
+                    &quot;is_break&quot;: false
+                }
+            ]
+        },
+        &quot;start_index&quot;: 1,
+        &quot;end_index&quot;: 20
+    },
+    &quot;results&quot;: [
+        {
+            &quot;id&quot;: &quot;03cc166d-989d-4734-8e66-4657fe4796fe&quot;,
+            &quot;event_name&quot;: &quot;Effective Goal Setting&quot;,
+            &quot;event_venue&quot;: &quot;After 40 Hotels&quot;,
+            &quot;event_description&quot;: &quot;&lt;p&gt;Every month we are offering you customized trainings to help you acquire the necessary skills you NEED for life. Skills that you will hardly get someone to train you &quot;,
+            &quot;event_category_fk&quot;: &quot;c79c2cbb-828c-441b-868e-c49ed2332725&quot;,
+            &quot;parent_event_id&quot;: null,
+            &quot;category_name&quot;: &quot;Conference&quot;,
+            &quot;event_poster&quot;: &quot;https://files.mookh.com/uploads/Effective_goal_setting-Moohk_Poster.jpg&quot;,
+            &quot;thumbnail_frontend&quot;: null,
+            &quot;store_fk&quot;: &quot;0ca24105-32eb-497c-8806-3e7149b58f94&quot;,
+            &quot;store_name&quot;: &quot;Adira Skills Development Program&quot;,
+            &quot;store_thumbnail&quot;: null,
+            &quot;currency&quot;: &quot;KES&quot;,
+            &quot;country&quot;: &quot;KE&quot;,
+            &quot;start_date&quot;: &quot;2020-02-08T08:00:00+03:00&quot;,
+            &quot;end_date&quot;: &quot;2020-02-08T13:00:00+03:00&quot;,
+            &quot;is_active&quot;: true,
+            &quot;is_free&quot;: false,
+            &quot;is_private&quot;: false,
+            &quot;is_published&quot;: true,
+            &quot;is_published_to_directory&quot;: true,
+            &quot;has_complimentary&quot;: true,
+            &quot;has_payment_installments&quot;: false,
+            &quot;payments_mpesa&quot;: true,
+            &quot;payments_cards&quot;: false,
+            &quot;payments_cash&quot;: false,
+            &quot;event_metadata&quot;: { },
+            &quot;latitude&quot;: &quot;36.819326&quot;,
+            &quot;created&quot;: &quot;2020-01-28T23:25:52.008616+03:00&quot;,
+            &quot;longitude&quot;: &quot;-1.282863&quot;,
+            &quot;is_featured&quot;: false,
+            &quot;is_staff_pic&quot;: false,
+            &quot;staff_pick_start_date&quot;: null,
+            &quot;staff_pick_end_date&quot;: null,
+            &quot;shortened_url&quot;: &quot;https://mookh.co/ZZZF3j/&quot;,
+            &quot;frontend_link&quot;: &quot;https://mookh.com/embed/event/efffective-goal-setting&quot;,
+            &quot;slug&quot;: &quot;efffective-goal-setting&quot;,
+            &quot;data_fields_names&quot;: [
+                &quot;Age&quot;, &quot;What do you do?&quot;
+            ],
+            &quot;type_name&quot;: &quot;store.event&quot;,
+            &quot;type_id&quot;: 18
+        },
+        {
+            &quot;id&quot;: &quot;482e4549-8ce1-4909-8f49-db2727aea97d&quot;,
+            &quot;event_name&quot;: &quot;254 Brewing Co. Launch&quot;,
+            &quot;event_venue&quot;: &quot;254 Brewing Company, Kikuyu&quot;,
+            &quot;event_description&quot;: &quot;&lt;p&gt;There's a new beer in town! Well, 13 of them actually. The 254 Brewing Co Launch Party marks the arrival of Kenya's newest line of craft beers. Come enjoy them FRESH from our modern brewery in Kikuyu, as we party in the garden with Blinky Bill and Jo Kisila. You will NOT want to miss this - you'll be telling your grandkids about it!! Tickets include 4 complimentary 350ml beers of your choice.&lt;br&gt;&lt;/p&gt;&quot;,
+            &quot;event_category_fk&quot;: &quot;1ccd6ddc-92a3-42c6-bb4c-85e481d8e101&quot;,
+            &quot;parent_event_id&quot;: null,
+            &quot;category_name&quot;: &quot;Entertainment&quot;,
+            &quot;event_poster&quot;: &quot;https://files.mookh.com/uploads/254_Invitation_V52_moohk.jpg&quot;,
+            &quot;thumbnail_frontend&quot;: null,
+            &quot;store_fk&quot;: &quot;bb651b3c-f183-41a7-82bb-9821be3486b0&quot;,
+            &quot;store_name&quot;: &quot;254 Brewing Co.&quot;,
+            &quot;store_thumbnail&quot;: null,
+            &quot;currency&quot;: &quot;KES&quot;,
+            &quot;country&quot;: &quot;KE&quot;,
+            &quot;start_date&quot;: &quot;2020-02-08T14:00:00+03:00&quot;,
+            &quot;end_date&quot;: &quot;2020-02-08T19:00:00+03:00&quot;,
+            &quot;is_active&quot;: true,
+            &quot;is_free&quot;: false,
+            &quot;is_private&quot;: false,
+            &quot;is_published&quot;: true,
+            &quot;is_published_to_directory&quot;: true,
+            &quot;has_complimentary&quot;: true,
+            &quot;has_payment_installments&quot;: false,
+            &quot;payments_mpesa&quot;: true,
+            &quot;payments_cards&quot;: true,
+            &quot;payments_cash&quot;: false,
+            &quot;event_metadata&quot;: { },
+            &quot;latitude&quot;: &quot;36.661417&quot;,
+            &quot;created&quot;: &quot;2020-01-10T13:25:53.727170+03:00&quot;,
+            &quot;longitude&quot;: &quot;-1.234482&quot;,
+            &quot;is_featured&quot;: true,
+            &quot;is_staff_pic&quot;: true,
+            &quot;staff_pick_start_date&quot;: &quot;2020-02-01T04:12:00+03:00&quot;,
+            &quot;staff_pick_end_date&quot;: &quot;2020-02-08T19:12:00+03:00&quot;,
+            &quot;shortened_url&quot;: &quot;https://mookh.co/ZZZEoO/&quot;,
+            &quot;frontend_link&quot;: &quot;https://mookh.com/embed/event/254-brewing-co-launch&quot;,
+            &quot;slug&quot;: &quot;254-brewing-co-launch&quot;,
+            &quot;data_fields_names&quot;: [ ],
+            &quot;type_name&quot;: &quot;store.event&quot;,
+            &quot;type_id&quot;: 18
+        },
+        {
+            &quot;id&quot;: &quot;87100662-54b6-46f6-9660-8888ce3b6405&quot;,
+            &quot;event_name&quot;: &quot;Black Valentine 🖤&quot;,
+            &quot;event_venue&quot;: &quot;Junction mall&quot;,
+            &quot;event_description&quot;: &quot;&lt;p&gt;Valentines Party for Singo peeps!&lt;/p&gt;&quot;,
+            &quot;event_category_fk&quot;: &quot;c79c2cbb-828c-441b-868e-c49ed2332725&quot;,
+            &quot;parent_event_id&quot;: null,
+            &quot;category_name&quot;: &quot;Conference&quot;,
+            &quot;event_poster&quot;: &quot;https://files.mookh.com/uploads/Black-Valentine-Poster-Square-Amended.jpg&quot;,
+            &quot;thumbnail_frontend&quot;: null,
+            &quot;store_fk&quot;: &quot;91f48a40-9fd8-452e-bc80-df614ba20526&quot;,
+            &quot;store_name&quot;: &quot;Pweza Africa&quot;,
+            &quot;store_thumbnail&quot;: null,
+            &quot;currency&quot;: &quot;KES&quot;,
+            &quot;country&quot;: &quot;KE&quot;,
+            &quot;start_date&quot;: &quot;2020-02-09T16:30:00+03:00&quot;,
+            &quot;end_date&quot;: &quot;2020-02-09T20:30:00+03:00&quot;,
+            &quot;is_active&quot;: true,
+            &quot;is_free&quot;: false,
+            &quot;is_private&quot;: false,
+            &quot;is_published&quot;: true,
+            &quot;is_published_to_directory&quot;: true,
+            &quot;has_complimentary&quot;: true,
+            &quot;has_payment_installments&quot;: false,
+            &quot;payments_mpesa&quot;: true,
+            &quot;payments_cards&quot;: true,
+            &quot;payments_cash&quot;: false,
+            &quot;event_metadata&quot;: { },
+            &quot;latitude&quot;: &quot;36.763181&quot;,
+            &quot;created&quot;: &quot;2020-01-20T17:23:18.539206+03:00&quot;,
+            &quot;longitude&quot;: &quot;-1.298783&quot;,
+            &quot;is_featured&quot;: true,
+            &quot;is_staff_pic&quot;: true,
+            &quot;staff_pick_start_date&quot;: &quot;2020-02-01T04:11:00+03:00&quot;,
+            &quot;staff_pick_end_date&quot;: &quot;2020-02-09T17:11:00+03:00&quot;,
+            &quot;shortened_url&quot;: &quot;https://mookh.co/ZZZEwh/&quot;,
+            &quot;frontend_link&quot;: &quot;https://mookh.com/embed/event/black-valentines&quot;,
+            &quot;slug&quot;: &quot;black-valentines&quot;,
+            &quot;data_fields_names&quot;: [ ],
+            &quot;type_name&quot;: &quot;store.event&quot;,
+            &quot;type_id&quot;: 18
+        },
+        ....
+    ]
+}
+</code></pre>
+
+<h2 id="12-retrieving-an-event"><a class="toclink" href="#12-retrieving-an-event">1.2. Retrieving an Event</a></h2>
+<p>Retrieve an event using <strong>slug</strong> property.</p>
+<p>Method: [GET]</p>
+<p>URL : <code>API_URL/stores/event/public/slug/&lt;event_slug_here&gt;</code></p>
+<p>Example <a href="https://api-v2.mookh.com/stores/event/public/slug/through-thick-n-thin-stand-up-comedy-special/">Through Think N Thin Comedy Show</a> <code>https://api-v2.mookh.com/stores/event/public/slug/through-thick-n-thin-stand-up-comedy-special/</code></p>
+<pre><code>{
+    &quot;id&quot;: &quot;196d548c-2581-46d6-8bdf-39b17bdf9873&quot;,
+    &quot;slug&quot;: &quot;through-thick-n-thin-stand-up-comedy-special&quot;,
+    &quot;event_name&quot;: &quot;Through Thick N Thin Stand Up Comedy Special&quot;,
+    &quot;event_venue&quot;: &quot;Garden City Mall&quot;,
+    &quot;event_description&quot;: &quot;On the 14th February of 2020, we would like to celebrate a son of the soil who has brought a lot of laughter to various homes, Timothy Kimani...&quot;,
+    &quot;event_category_fk&quot;: &quot;1ccd6ddc-92a3-42c6-bb4c-85e481d8e101&quot;,
+    &quot;category_name&quot;: &quot;Entertainment&quot;,
+    &quot;event_poster&quot;: &quot;https://files.mookh.com/uploads/njugush.jpg&quot;,
+    &quot;thumbnail_frontend&quot;: null,
+    &quot;store_fk&quot;: &quot;50713b50-8871-4249-a56f-7647cfb2f789&quot;,
+    &quot;store_slug&quot;: &quot;winnie-gor-events&quot;,
+    &quot;store_name&quot;: &quot;NJUGUSH CREATIVES&quot;,
+    &quot;store_thumbnail&quot;: null,
+    &quot;currency&quot;: &quot;KES&quot;,
+    &quot;country&quot;: &quot;KE&quot;,
+    &quot;start_date&quot;: &quot;2020-02-14T19:00:00+03:00&quot;,
+    &quot;end_date&quot;: &quot;2020-02-14T22:00:00+03:00&quot;,
+    &quot;is_active&quot;: true,
+    &quot;tickets&quot;: [
+        {
+            &quot;id&quot;: &quot;cbcd63f7-e3cb-40eb-93c6-d9c369063fa9&quot;,
+            &quot;ticket_name&quot;: &quot;Regular Tickets&quot;,
+            &quot;event_fk&quot;: &quot;196d548c-2581-46d6-8bdf-39b17bdf9873&quot;,
+            &quot;ticket_description&quot;: &quot;&quot;,
+            &quot;is_published&quot;: true,
+            &quot;ticket_metadata&quot;: { },
+            &quot;start_at&quot;: &quot;2020-02-14T19:00:00+03:00&quot;,
+            &quot;end_at&quot;: &quot;2020-02-14T22:00:00+03:00&quot;,
+            &quot;sort_no&quot;: 1,
+            &quot;group_ticket_quantity&quot;: 1,
+            &quot;is_group_ticket&quot;: false,
+            &quot;quantity&quot;: 1500,
+            &quot;complimentary&quot;: 0,
+            &quot;tickets_available&quot;: 1346,
+            &quot;payment_installments&quot;: 1,
+            &quot;is_available&quot;: true,
+            &quot;is_active&quot;: true,
+            &quot;thumbnail&quot;: &quot;https://files.mookh.com/uploads/Comedy_poster_5_ajXOotX.jpg&quot;,
+            &quot;sales_start_at&quot;: &quot;2020-01-31T22:00:00+03:00&quot;,
+            &quot;prices&quot;: [
+                {
+                    &quot;price&quot;: &quot;1000.00&quot;,
+                    &quot;price_currency&quot;: &quot;KES&quot;
+                }
+            ],
+            &quot;sales_end_at&quot;: &quot;2020-02-14T22:00:00+03:00&quot;,
+            &quot;type_name&quot;: &quot;store.ticket&quot;,
+            &quot;type_id&quot;: 22
+        },
+        {
+            &quot;id&quot;: &quot;685da37f-18fc-4760-bc7f-9603627e684e&quot;,
+            &quot;ticket_name&quot;: &quot;VIP TIckets&quot;,
+            &quot;event_fk&quot;: &quot;196d548c-2581-46d6-8bdf-39b17bdf9873&quot;,
+            &quot;ticket_description&quot;: null,
+            &quot;is_published&quot;: true,
+            &quot;ticket_metadata&quot;: { },
+            &quot;sort_no&quot;: 2,
+            &quot;group_ticket_quantity&quot;: 1,
+            &quot;is_group_ticket&quot;: false,
+            &quot;tickets_available&quot;: 442,
+            &quot;payment_installments&quot;: 1,
+            &quot;is_available&quot;: true,
+            &quot;is_active&quot;: true,
+            &quot;thumbnail&quot;: &quot;https://files.mookh.com/uploads/Comedy_poster_5_B2kEapa.jpg&quot;,
+            &quot;sales_start_at&quot;: &quot;2020-01-12T11:45:00+03:00&quot;,
+            &quot;prices&quot;: [
+                {
+                    &quot;price&quot;: &quot;2500.00&quot;,
+                    &quot;price_currency&quot;: &quot;KES&quot;
+                }
+            ],
+            &quot;sales_end_at&quot;: &quot;2020-02-14T22:00:00+03:00&quot;,
+            &quot;type_name&quot;: &quot;store.ticket&quot;,
+            &quot;type_id&quot;: 22
+        },
+        {
+            &quot;id&quot;: &quot;57e03718-9434-452b-9a7e-1dc69f4e5914&quot;,
+            &quot;ticket_name&quot;: &quot;Couples Tickets&quot;,
+            &quot;event_fk&quot;: &quot;196d548c-2581-46d6-8bdf-39b17bdf9873&quot;,
+            &quot;ticket_description&quot;: null,
+            &quot;ticket_value&quot;: &quot;0.00&quot;,
+            &quot;is_published&quot;: true,
+            &quot;ticket_metadata&quot;: { },
+            &quot;sort_no&quot;: 3,
+            &quot;group_ticket_quantity&quot;: 2,
+            &quot;is_group_ticket&quot;: true,
+            &quot;tickets_available&quot;: 351,
+            &quot;payment_installments&quot;: 1,
+            &quot;is_available&quot;: true,
+            &quot;is_active&quot;: true,
+            &quot;thumbnail&quot;: &quot;https://files.mookh.com/uploads/Comedy_poster_5_o2ZzCJp.jpg&quot;,
+            &quot;sales_start_at&quot;: &quot;2020-01-12T11:45:00+03:00&quot;,
+            &quot;prices&quot;: [
+                {
+                    &quot;price&quot;: &quot;1800.00&quot;,
+                    &quot;price_currency&quot;: &quot;KES&quot;
+                }
+            ],
+            &quot;sales_end_at&quot;: &quot;2020-02-14T22:00:00+03:00&quot;,
+            &quot;type_name&quot;: &quot;store.ticket&quot;,
+            &quot;type_id&quot;: 22
+        }
+    ],
+    &quot;is_free&quot;: false,
+    &quot;is_private&quot;: false,
+    &quot;cash_locations&quot;: [ ],
+    &quot;default_cash_locations&quot;: [ ],
+    &quot;payments_mpesa&quot;: true,
+    &quot;payments_cards&quot;: true,
+    &quot;payments_cash&quot;: false,
+    &quot;is_published&quot;: true,
+    &quot;is_published_to_directory&quot;: true,
+    &quot;has_complimentary&quot;: true,
+    &quot;has_payment_installments&quot;: false,
+    &quot;shortened_url&quot;: &quot;https://mookh.co/ZZZEnq/&quot;,
+    &quot;data_fields&quot;: [ ],
+    &quot;data_fields_names&quot;: [ ],
+    &quot;type_name&quot;: &quot;store.event&quot;,
+    &quot;type_id&quot;: 18
+}
+</code></pre>
+
+<h3 id="121-important-notes"><a class="toclink" href="#121-important-notes">1.2.1. Important notes</a></h3>
+<ul>
+<li>Ticket availability (can be purchased) is determined by <strong>available</strong> quantity and <strong>sales_end_date</strong>. An <strong>is_available</strong> preset flag is available for easy checking.</li>
+<li>Some events allow cash payments (<strong>payments_cash=true</strong>). In this case <strong>cash_locations</strong> and <strong>default_cash_locations</strong> should be displayed for the customer to see in case they want to pay for tickets with cash.</li>
+<li>For events with <strong>is_free=true</strong> (RSVP), customers should only be allowed to provide customer information and/or ticket names (See <a href="/api-guide/public/6-ordering#31-additional-item-fields">ordering</a> section for more)</li>
+</ul>
+<h2 id="13-filtering-sorting-events"><a class="toclink" href="#13-filtering-sorting-events">1.3. Filtering / Sorting Events</a></h2>
+<p>You can filter public APIs supplying query parameters. The following is a list of available filters.</p>
+<ul>
+<li><strong>country</strong> Filter feature items by country code. Options are <strong>KE</strong>, <strong>UG</strong> and <strong>RW</strong>.</li>
+<li><strong>store_fk=value</strong> Filter events from a store using store UUID. Useful when displaying more ticket purchase options from an event organizer's store. </li>
+<li><strong>category_name=value</strong> (case insensitive) filter events by category name, <strong>value</strong>. Event categories are accessible via <code>API_URL/stores/event_category/</code>.</li>
+<li><strong>sort_by=value</strong> this param enables filtering and sorting. <strong>value</strong> options are predefined as <strong>today</strong>, <strong>tomorrow</strong>, <strong>this_weekend</strong>, <strong>this_week</strong>, <strong>next_week</strong>, <strong>this_month</strong>, <strong>next_month</strong>, <strong>asc</strong> and <strong>desc</strong>.</li>
+<li><strong>start_date_min=value</strong> filter events starting from date <strong>value</strong> to present.</li>
+<li><strong>start_date_max</strong> filter events with starting date upto <strong>value</strong> to earlier (earlier being start date of first event by default or overridden by <strong>start_date_min</strong> stated above).</li>
+<li><strong>end_date_min</strong> filter events whose ending dates are from date <strong>value</strong> to present.</li>
+<li><strong>end_date_max</strong> filter events whose ending date upto <strong>value</strong> to earlier (end date of first event or overridden by <strong>end_date_min</strong>)</li>
+<li><strong>is_featured=value</strong> boolean for filtering featured events.
+Example usage <a href="https://api-v2.mookh.com/stores/event/public/slug/?sort_by=this_week">This week events</a> <code>https://api-v2.mookh.comstores/event/public/slug/?sort_by=this_week</code></li>
+</ul>
+<h3 id="131-important-notes"><a class="toclink" href="#131-important-notes">1.3.1. Important notes</a></h3>
+<ul>
+<li>All date params must take the format <strong>YYYY-MM-DD</strong>.</li>
+</ul>
+<h2 id="14-searching-events"><a class="toclink" href="#14-searching-events">1.4. Searching Events</a></h2>
+<p>Mookh provides a global search for any content.</p>
+<p>Methods: [GET]</p>
+<p>URL: <code>API_URL/search/search/?q=SEARCH QUERY</code> <strong>SEARCH QUERY</strong> is user input.</p>
+<p>Example <code>https://api-v2.mookh.com/search/search/?q=kenya</code></p>
+<p>RESPONSE format (some of the fields are hidden)</p>
+<pre><code>{
+    &quot;took&quot;: &quot;integer milliseconds&quot;,
+    &quot;hits&quot;: {
+        &quot;total&quot;: &quot;integer&quot;,
+        &quot;max_score&quot;: &quot;integer&quot;,
+        &quot;hits&quot;: &quot;object array&quot;
+    }
+}
+</code></pre>
+
+<p>Process the <code>hits</code> object array is a mix of documents for events and music.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../1-featured/" title="2. Featured" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                2. Featured
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../3-digital/" title="4. Digital Content" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                4. Digital Content
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.a353778b.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+    
+  </body>
+</html>

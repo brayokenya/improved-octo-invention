@@ -1,0 +1,1 @@
+Mookh allows for any active account to be associated with a store or an event. The owner of such an account is an agent of the store or event they've been added to.

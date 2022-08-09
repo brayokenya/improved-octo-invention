@@ -1,0 +1,2 @@
+By definition all accounts on Mookh are clients. This is the default role assigned to new accounts signing up via [mookh.com](https://mookh.com).
+A client can purchase items (tickets, music and e-books), view orders and perform account management.
